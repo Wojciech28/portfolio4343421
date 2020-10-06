@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Open+Sans:wght@400;600&family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" ></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css ">
+   
+    <title>Portfolio</title>
+</head>
+    <body>
+        
+    <header>
+        
+        <div class="loadingOverlay">
+            <div class="logoWrapper">
+                <div id="loadingShip">
+                    <img id="ship" src="img/ship.png" alt ="logo">
+                    <svg  id="waves" enable-background="new 0 0 512 512" height="150" viewBox="0 0 512 512" width="300"
+                    xmlns="http://www.w3.org/2000/svg">
+                        <g>
+                            <path id="firstLine" fill="#50ABC1"  transform="translate(0)"   d="m470.998 291.245c-7.227 5.42-12.001 9-23.002 9s-15.775-3.581-23.002-9c-8.911-6.683-20.001-15-41.002-15-21 0-32.09 8.317-41.001 15-7.227 5.419-12 9-23.001 9-10.999 0-15.773-3.58-22.999-9-8.91-6.683-20-15-41-15s-32.088 8.317-40.999 15c-7.226 5.419-11.999 9-22.998 9-11 0-15.773-3.581-23-9-8.91-6.683-20-15-41-15s-32.089 8.317-41 15c-7.226 5.419-12 9-23 9-10.999 0-15.772-3.58-22.998-9-8.911-6.683-20-15-40.999-15v30c10.999 0 15.772 3.58 22.999 9 8.91 6.683 19.999 15 40.999 15s32.089-8.317 41-15c7.226-5.419 12-9 23-9s15.773 3.581 23 9c8.91 6.683 20 15 41 15s32.088-8.317 40.999-15c7.226-5.419 11.999-9 22.998-9 11 0 15.773 3.581 23 9 8.91 6.683 20 15 40.999 15 21 0 32.09-8.317 41.001-15 7.227-5.419 12-9 23.001-9s15.775 3.581 23.002 9c8.911 6.683 20.001 15 41.002 15s32.091-8.317 41.002-15c7.227-5.42 12.001-9 23.002-9v-30c-21.002.001-32.092 8.318-41.003 15z"/>
+                            <path id="secondLine" fill="#508FC1" d="m447.996 369.702c-11.001 0-15.775-3.581-23.002-9-8.911-6.683-20.001-15-41.002-15-21 0-32.09 8.317-41.001 15-7.227 5.419-12 9-23.001 9-10.999 0-15.773-3.58-22.999-9-8.91-6.683-20-15-41-15s-32.088 8.317-40.999 15c-7.226 5.419-11.999 9-22.998 9-11 0-15.773-3.581-23-9-8.91-6.683-20-15-41-15s-32.089 8.317-41 15c-7.226 5.419-12 9-23 9-10.999 0-15.772-3.58-22.998-9-8.911-6.683-20-15-40.999-15v30c10.999 0 15.772 3.58 22.999 9 8.91 6.683 19.999 15 40.999 15s32.089-8.317 41-15c7.226-5.419 12-9 23-9s15.773 3.581 23 9c8.91 6.683 20 15 41 15s32.088-8.317 40.999-15c7.226-5.419 11.999-9 22.998-9 11 0 15.773 3.581 23 9 8.91 6.683 20 15 40.999 15 21 0 32.09-8.317 41.001-15 7.227-5.419 12-9 23.001-9s15.775 3.581 23.002 9c8.911 6.683 20.001 15 41.002 15s32.091-8.317 41.002-15c7.227-5.42 12.001-9 23.002-9v-30c-21.001 0-32.091 8.317-41.002 15-7.228 5.42-12.002 9-23.003 9z"/>
+                            <path id="thirdLine" fill="#5072C1" d="m447.996 439.158c-11.001 0-15.775-3.581-23.002-9-8.911-6.683-20.001-15-41.002-15-21 0-32.09 8.317-41.001 15-7.227 5.419-12 9-23.001 9-10.999 0-15.773-3.58-22.999-9-8.91-6.683-20-15-41-15s-32.088 8.317-40.999 15c-7.226 5.419-11.999 9-22.998 9-11 0-15.773-3.581-23-9-8.91-6.683-20-15-41-15s-32.089 8.317-41 15c-7.226 5.419-12 9-23 9-10.999 0-15.772-3.58-22.998-9-8.911-6.683-20-15-40.999-15v30c10.999 0 15.772 3.58 22.999 9 8.91 6.683 19.999 15 40.999 15s32.089-8.317 41-15c7.226-5.419 12-9 23-9s15.773 3.581 23 9c8.91 6.683 20 15 41 15s32.088-8.317 40.999-15c7.226-5.419 11.999-9 22.998-9 11 0 15.773 3.581 23 9 8.91 6.683 20 15 40.999 15 21 0 32.09-8.317 41.001-15 7.227-5.419 12-9 23.001-9s15.775 3.581 23.002 9c8.911 6.683 20.001 15 41.002 15s32.091-8.317 41.002-15c7.227-5.42 12.001-9 23.002-9v-30c-21.001 0-32.091 8.317-41.002 15-7.228 5.42-12.002 9-23.003 9z"/>
+                         <animateMotion
+                             xlink:href="#firstLine"
+                            path="M20,0 0,0 -20,0z"
+                            begin="0s" dur="7s" repeatCount="indefinite"
+                            keySplines="0.5 0 0.49 1"/>
+                       
+                        <animateMotion
+                             xlink:href="#secondLine"
+                            path="M20,0 0,0 -20,0z"
+                            begin="3s" dur="7s" repeatCount="indefinite"
+                            keySplines="0.5 0 0.49 1"/>
+                       
+                        <animateMotion
+                             xlink:href="#thirdLine"
+                            path="M20,0 0,0 -20,0z"
+                            begin="0s" dur="7s" repeatCount="indefinite"
+                            
+                            keySplines="0.5 0 0.49 1"/>
+                        </g>
+                    </svg>
+                    <h3 class="loadingText"> Loading </h3>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="iconsHeader">
+            <h4 id="img1" > intuitive </h4>
+            <h4 id="img2" > creative </h4>
+            <h4 id="img3" > simple</h4>
+            <h4 id="img4" > inspiring</h4>
+            <h4 id="img5" > aesthetic</h4>
+            <h4 id="img6" > logic</h4>
+        </div>
+        <div class="iconsImg">
+
+            <img id="anim1" alt="anim1" class="anim" src="img/anim/iconfinder_thin-1611_touch_press_button_click_1806483.png">
+            <img id="anim2" alt="anim2" class="anim" src="img/anim/iconfinder___creative_design_idea_5681443.png">
+            <img id="anim3" alt="anim3" class="anim" src="img/anim/iconfinder_tick_273677.png">
+            <img id="anim4" alt="anim4" class="anim" src="img/anim/iconfinder_big_data-16_3132438.png">
+            <img id="anim5" alt="anim5" class="anim" src="img/anim/iconfinder_aesthetics_artistic_beauty_taste_loveliness_aesthetic_5363652.png">
+            <img id="anim6" alt="anim6" class="anim" src="img/anim/iconfinder_brainstorm_2144744.png">
+
+        </div>
+        <div class="logoWrapper logoFadeIn">
+            <div id="logo">
+                <img id="logoPicture" src="img/logo.png" alt ="logo">
+                <div class="logoDescr">
+                    <h2>Portfolio site</h2> 
+                    <h5>of Wojciech Marcichow</h5>
+                </div>
+            </div>
+        </div>
+        <img class="navButton" src="img/arrow.png" alt="nav">
+        <nav> 
+            <ul id="navlist" class="navlist" >
+                <li class="m-5 "> <a href="#navlist"> Home </a></li>
+                <li class="m-5 "> <a href="#slider"> Portfolio</a></li>
+                <li class="m-5 "> <a href="#aboutMe"> About me</a></li>
+                <li class="m-5 "> <a href="#contact"> Contact</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+   
+    <main>
+        <article class="introduction"> 
+            <h4 class="text-center">Hi I&nbsp;am a front end developer who loves responsive design and css. I&nbsp; recently finished a degree in front-end development at Treehause and am exited to put all my skills to use!</h4> 
+         </article>
+        <article id="slider" class="pt-4 pb-4">
+            <h1 class=" mb-3 text-center"> Portfolio </h1>
+            <section class="slider owl-carousel carousel-main">
+           
+                <div class="card" >
+                    <div class="img">
+                        <a href="https://wojciech28.github.io/unit3/"><img src="img/form.png" alt="form"></a>
+                        <div class="middle">
+                            
+                        </div>
+                    </div>
+                    
+                    <div class="content">
+                        <h3 class="mt-2"> An Online Registration Form</h3>
+                        <p class="mt-2">This project challenged me to build a responsive, mobile-first registration form using a variety of HTML form elements.</p>
+                        
+                    </div>
+                </div> 
+                <div class="card">
+                    <div class="img">
+                        <a href="https://wojciech28.github.io/Unit-5/index2.html"><img src="img/gallery_mockup.png" alt="gallery"></a>
+                        <div class="middle">
+                            
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h3 class="mt-2">An Interactive Photo Gallery </h3>
+                        <p class="mt-2"> In this project I have got some practice with JavaScript plugins by implementing searchable photo gallery.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="img">
+                        <a href="https://wojciech28.github.io/Unit-7/Unit%207/index.html"><img src="img/dashboard.png" alt="dashboard"></a>
+                        <div class="middle">
+                            
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h3 class="mt-2">WebApp Dashboard</h3>
+                        <p class="mt-2">In this project I built an interactive dashboard for a web application using advanced web techniques including SVG graphics and JavaScript programming.</p>
+                    </div>
+                </div>
+                <div class=" card  ">
+                    <div class="img">
+                        <a href="https://wojciech28.github.io/todolist/index.html"><img src="img/todolist.png" alt="toDoList"></a>
+                        <div class="middle">
+                            
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h3 class="mt-2">An interactive to do list</h3>
+                        <p class="mt-2"> Here I have been practicing JavaScript skills creating an interactive to do list.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="img">
+                        <a href="https://wojciech28.github.io/Unit-6/Unit-6/index.html"><img src="img/game1.png" alt="game1"></a>
+                        <div class="middle">
+                            
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h3 class="mt-2">Game Show App</h3>
+                        <p class="mt-2">In this project, I created a browser version of “Wheel of Success”, a word guessing game. I used Javascript to come up with a random phrase that players will try to guess by entering different letters into the program.</p>
+                    </div>
+                </div>
+                <div class="card" >
+                    <div class="img">
+                        <a href="https://wojciech28.github.io/Unit-8/Unit%208/unit9.html"><img src="img/employee_overlay.png" alt="employee"></a>
+                        <div class="middle">
+                            
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h3 class="mt-2">Employee Directory</h3>
+                        <p class="mt-2">Using JavaScript, I created an employee directory by communicating with a third-party API (Application Programming Interface).</p>
+                    </div>    
+                </div>
+            </section>
+        </article>
+
+        <article class=" text-center " id="skills">
+            <div class="textAboutSkills">
+                <h1 class=" skillsH bolder carrier "> Skills</h1>
+                <h4 class="pt-2 carrier"> During my Treehouse Techdegree I' ve built a solid foundation of Html, Css and JavaScript. Right now I learn about SQL databases and Node.js to become a full stack developer. </h4>
+            </div>
+            <div class="planetWrapper">
+                <div class="iconsSkills">
+                    
+                        <div class="bootstrapOrbit circles">
+                            <img id="bootstrap" class="planet" src="img/bootstrap.png" alt="bootstrap">
+                            <div class="planetsDescr"><p  class="paragraph" ><span class="planetText">  bootsrap</span> </p></div>
+                        </div>
+                    
+                
+                        <div  class="htmlOrbit circles">
+                            <img id="html2" class="planet" src="img/html.png" alt="html">
+                            <div class="planetsDescr"><p  class="paragraph" ><span class="planetText">  html </span> </p></div>
+                        </div>
+                    
+                        <img id="center" style="transform: rotate(22deg);" src="img/earth1.png" alt ="earth">
+                    
+                        <div class="cssOrbit circles">
+                            <img id="css" class="planet" src="img/css.png" alt="css" >
+                            <div class="planetsDescr"><p class="paragraph"><span class="planetText"> css </span> </p></div>
+                        </div>
+                    
+                
+                        <div class="jsOrbit circles" >
+                            <img id="js" class="planet" src="img/js.png" alt="js" >
+                            <div class="planetsDescr"><p class="paragraph"><span class="planetText"> js </span> </p></div>
+                        </div>
+                    
+                </div>
+            </div>
+            <div class="myAnimations">
+                    <p> I love to create interesting animations. This is my favorite part of CSS which gives me a lot of joy and satisfaction, despite being challenging. It's always nice to have a look at a slightly livelier website.
+                        <span class="here">Here </span><span class="after">you can see my fascinating "world of code" :)</span> .
+                    </p>
+            </div>
+            
+            <div>
+                <p class=" catStory ">
+                    One of the way to develop JavaScript skills is through game development.<br>
+                    This one is inspired by a movie about a cat playing on a tablet.<br>
+                    
+                </p>
+            </div>
+
+             <div  class="ballonWrapper">
+                <div  id="ballonGame">
+                    
+                    <div class="gameButtonWrapper">
+                        <img class="cat" src="img/halloween-black-cat.png" alt="cat">
+                        <h2 class="cats">play the cat game ! </h2>
+                        <h3 id="score" style="display: none; width: 200px;  position: relative; top:430px; left: 200px; color:gray;">  </h3> 
+                        <img id="gameover" style=" display:none; width: 100px; height: 80px; position: relative; top: 220px; left: 235px;" src="img/game-over.png" alt="game" >
+                        <h4 id="win">Congratulation!<br>You won !!!</h4> 
+                        <img id ="wool" src="img/wool.png" alt="wool">
+                        <h4 id="tryAgain"> Try again! </h4>
+                        <h4 id="level" > </h4>
+                        <img id="cloud1" class="cloud" src="img/cloud-computing.png" alt="cloud">
+                        <img id="cloud2" class="cloud" src="img/cloud-computing.png" alt="cloud">
+                        <img id="cloud3" class="cloud" src="img/cloud-computing.png" alt="cloud">
+                    </div>
+                    <div id="catItems">
+                        
+                        <svg id="image1" class="catit" xmlns="http://www.w3.org/2000/svg"
+                        width="100.000000pt" height="100.000000pt" viewBox="0 0 640.000000 1280.000000"
+                        preserveAspectRatio="xMidYMid meet">
+                        <metadata>
+                        Created by potrace 1.15, written by Peter Selinger 2001-2017
+                        </metadata>
+                        <g transform="translate(0.000000,1280.000000) scale(0.100000,-0.100000)"
+                        fill="#000000" stroke="none">
+                        <path class="ballon"  d="M3030 12794 c-554 -47 -998 -226 -1387 -558 -353 -301 -611 -715
+                        -757 -1211 -166 -569 -172 -1193 -15 -1725 17 -58 35 -121 41 -140 51 -173
+                        227 -554 363 -785 470 -800 1222 -1540 1757 -1730 90 -32 137 -68 118 -90 -6
+                        -8 -8 -20 -4 -26 12 -20 11 -72 -2 -99 -18 -37 -117 -128 -148 -136 -31 -7
+                        -35 -34 -5 -34 12 0 47 6 78 14 75 19 297 50 313 43 27 -10 74 -214 104 -447
+                        21 -171 30 -806 15 -1090 -30 -564 -66 -921 -151 -1520 -100 -701 -144 -1095
+                        -154 -1380 l-5 -135 14 170 c13 161 42 452 65 650 12 97 76 555 110 775 85
+                        559 139 1135 160 1715 9 275 1 629 -20 830 -13 117 -54 337 -75 396 -8 23 -15
+                        43 -15 45 0 2 18 4 41 4 59 0 50 30 -15 50 -39 13 -55 26 -87 70 -21 30 -49
+                        61 -63 69 -30 18 -40 60 -19 83 8 9 47 29 87 44 423 160 964 630 1421 1236
+                        201 265 363 528 496 803 71 148 173 392 197 475 6 19 24 82 41 140 92 310 127
+                        617 110 950 -25 472 -118 854 -299 1225 -145 296 -346 558 -583 761 -345 295
+                        -744 472 -1214 539 -105 15 -422 27 -513 19z m285 -6342 c-6 -7 -35 18 -35 31
+                        0 5 9 2 20 -8 11 -10 18 -20 15 -23z" stroke="black" fill="#2C89A0" stroke-width="2" fill-opacity="0.5"/>
+                        <path d="M3184 1605 c0 -66 1 -92 3 -57 2 34 2 88 0 120 -2 31 -3 3 -3 -63z"/>
+                        <path d="M3183 1105 c0 -22 2 -30 4 -17 2 12 2 30 0 40 -3 9 -5 -1 -4 -23z"/>
+                        </g>
+                        </svg>
+                        <svg  id="image2" class="catit"  version="1.0" xmlns="http://www.w3.org/2000/svg"
+                        width="100.000000pt" height="100.000000pt" viewBox="0 0 640.000000 1280.000000"
+                        preserveAspectRatio="xMidYMid meet">
+                        <metadata>
+                        Created by potrace 1.15, written by Peter Selinger 2001-2017
+                        </metadata>
+                        <g transform="translate(0.000000,1280.000000) scale(0.100000,-0.100000)"
+                        fill="#000000" stroke="none">
+                        <path class="ballon"  d="M3030 12794 c-554 -47 -998 -226 -1387 -558 -353 -301 -611 -715
+                        -757 -1211 -166 -569 -172 -1193 -15 -1725 17 -58 35 -121 41 -140 51 -173
+                        227 -554 363 -785 470 -800 1222 -1540 1757 -1730 90 -32 137 -68 118 -90 -6
+                        -8 -8 -20 -4 -26 12 -20 11 -72 -2 -99 -18 -37 -117 -128 -148 -136 -31 -7
+                        -35 -34 -5 -34 12 0 47 6 78 14 75 19 297 50 313 43 27 -10 74 -214 104 -447
+                        21 -171 30 -806 15 -1090 -30 -564 -66 -921 -151 -1520 -100 -701 -144 -1095
+                        -154 -1380 l-5 -135 14 170 c13 161 42 452 65 650 12 97 76 555 110 775 85
+                        559 139 1135 160 1715 9 275 1 629 -20 830 -13 117 -54 337 -75 396 -8 23 -15
+                        43 -15 45 0 2 18 4 41 4 59 0 50 30 -15 50 -39 13 -55 26 -87 70 -21 30 -49
+                        61 -63 69 -30 18 -40 60 -19 83 8 9 47 29 87 44 423 160 964 630 1421 1236
+                        201 265 363 528 496 803 71 148 173 392 197 475 6 19 24 82 41 140 92 310 127
+                        617 110 950 -25 472 -118 854 -299 1225 -145 296 -346 558 -583 761 -345 295
+                        -744 472 -1214 539 -105 15 -422 27 -513 19z m285 -6342 c-6 -7 -35 18 -35 31
+                        0 5 9 2 20 -8 11 -10 18 -20 15 -23z" stroke="black" fill="#2C89A0" stroke-width="2" fill-opacity="0.5"/>
+                        <path d="M3184 1605 c0 -66 1 -92 3 -57 2 34 2 88 0 120 -2 31 -3 3 -3 -63z"/>
+                        <path d="M3183 1105 c0 -22 2 -30 4 -17 2 12 2 30 0 40 -3 9 -5 -1 -4 -23z"/>
+                        </g>
+                        </svg>
+                        <svg id="image3" class="catit"  version="1.0" xmlns="http://www.w3.org/2000/svg"
+                        width="100.000000pt" height="100.000000pt" viewBox="0 0 640.000000 1280.000000"
+                        preserveAspectRatio="xMidYMid meet">
+                        <metadata>
+                        Created by potrace 1.15, written by Peter Selinger 2001-2017
+                        </metadata>
+                        <g transform="translate(0.000000,1280.000000) scale(0.100000,-0.100000)"
+                        fill="#000000" stroke="none">
+                        <path class="ballon"  d="M3030 12794 c-554 -47 -998 -226 -1387 -558 -353 -301 -611 -715
+                        -757 -1211 -166 -569 -172 -1193 -15 -1725 17 -58 35 -121 41 -140 51 -173
+                        227 -554 363 -785 470 -800 1222 -1540 1757 -1730 90 -32 137 -68 118 -90 -6
+                        -8 -8 -20 -4 -26 12 -20 11 -72 -2 -99 -18 -37 -117 -128 -148 -136 -31 -7
+                        -35 -34 -5 -34 12 0 47 6 78 14 75 19 297 50 313 43 27 -10 74 -214 104 -447
+                        21 -171 30 -806 15 -1090 -30 -564 -66 -921 -151 -1520 -100 -701 -144 -1095
+                        -154 -1380 l-5 -135 14 170 c13 161 42 452 65 650 12 97 76 555 110 775 85
+                        559 139 1135 160 1715 9 275 1 629 -20 830 -13 117 -54 337 -75 396 -8 23 -15
+                        43 -15 45 0 2 18 4 41 4 59 0 50 30 -15 50 -39 13 -55 26 -87 70 -21 30 -49
+                        61 -63 69 -30 18 -40 60 -19 83 8 9 47 29 87 44 423 160 964 630 1421 1236
+                        201 265 363 528 496 803 71 148 173 392 197 475 6 19 24 82 41 140 92 310 127
+                        617 110 950 -25 472 -118 854 -299 1225 -145 296 -346 558 -583 761 -345 295
+                        -744 472 -1214 539 -105 15 -422 27 -513 19z m285 -6342 c-6 -7 -35 18 -35 31
+                        0 5 9 2 20 -8 11 -10 18 -20 15 -23z" stroke="black" fill="#2C89A0" stroke-width="2" fill-opacity="0.5"/>
+                        <path d="M3184 1605 c0 -66 1 -92 3 -57 2 34 2 88 0 120 -2 31 -3 3 -3 -63z"/>
+                        <path d="M3183 1105 c0 -22 2 -30 4 -17 2 12 2 30 0 40 -3 9 -5 -1 -4 -23z"/>
+                        </g>
+                        </svg>
+                        <svg  id="image4" class="catit" version="1.0" xmlns="http://www.w3.org/2000/svg"
+                        width="100.000000pt" height="100.000000pt" viewBox="0 0 640.000000 1280.000000"
+                        preserveAspectRatio="xMidYMid meet">
+                        <metadata>
+                        Created by potrace 1.15, written by Peter Selinger 2001-2017
+                        </metadata>
+                        <g transform="translate(0.000000,1280.000000) scale(0.100000,-0.100000)"
+                        fill="#000000" stroke="none">
+                        <path class="ballon"  d="M3030 12794 c-554 -47 -998 -226 -1387 -558 -353 -301 -611 -715
+                        -757 -1211 -166 -569 -172 -1193 -15 -1725 17 -58 35 -121 41 -140 51 -173
+                        227 -554 363 -785 470 -800 1222 -1540 1757 -1730 90 -32 137 -68 118 -90 -6
+                        -8 -8 -20 -4 -26 12 -20 11 -72 -2 -99 -18 -37 -117 -128 -148 -136 -31 -7
+                        -35 -34 -5 -34 12 0 47 6 78 14 75 19 297 50 313 43 27 -10 74 -214 104 -447
+                        21 -171 30 -806 15 -1090 -30 -564 -66 -921 -151 -1520 -100 -701 -144 -1095
+                        -154 -1380 l-5 -135 14 170 c13 161 42 452 65 650 12 97 76 555 110 775 85
+                        559 139 1135 160 1715 9 275 1 629 -20 830 -13 117 -54 337 -75 396 -8 23 -15
+                        43 -15 45 0 2 18 4 41 4 59 0 50 30 -15 50 -39 13 -55 26 -87 70 -21 30 -49
+                        61 -63 69 -30 18 -40 60 -19 83 8 9 47 29 87 44 423 160 964 630 1421 1236
+                        201 265 363 528 496 803 71 148 173 392 197 475 6 19 24 82 41 140 92 310 127
+                        617 110 950 -25 472 -118 854 -299 1225 -145 296 -346 558 -583 761 -345 295
+                        -744 472 -1214 539 -105 15 -422 27 -513 19z m285 -6342 c-6 -7 -35 18 -35 31
+                        0 5 9 2 20 -8 11 -10 18 -20 15 -23z" stroke="black" fill="#2C89A0" stroke-width="2" fill-opacity="0.5"/>
+                        <path d="M3184 1605 c0 -66 1 -92 3 -57 2 34 2 88 0 120 -2 31 -3 3 -3 -63z"/>
+                        <path d="M3183 1105 c0 -22 2 -30 4 -17 2 12 2 30 0 40 -3 9 -5 -1 -4 -23z"/>
+                        </g>
+                        </svg>
+                        <svg id="image5" class="catit"  version="1.0" xmlns="http://www.w3.org/2000/svg"
+                        width="100.000000pt" height="100.000000pt" viewBox="0 0 640.000000 1280.000000"
+                        preserveAspectRatio="xMidYMid meet">
+                        <metadata>
+                        Created by potrace 1.15, written by Peter Selinger 2001-2017
+                        </metadata>
+                        <g transform="translate(0.000000,1280.000000) scale(0.100000,-0.100000)"
+                        fill="#000000" stroke="none">
+                        <path class="ballon"  d="M3030 12794 c-554 -47 -998 -226 -1387 -558 -353 -301 -611 -715
+                        -757 -1211 -166 -569 -172 -1193 -15 -1725 17 -58 35 -121 41 -140 51 -173
+                        227 -554 363 -785 470 -800 1222 -1540 1757 -1730 90 -32 137 -68 118 -90 -6
+                        -8 -8 -20 -4 -26 12 -20 11 -72 -2 -99 -18 -37 -117 -128 -148 -136 -31 -7
+                        -35 -34 -5 -34 12 0 47 6 78 14 75 19 297 50 313 43 27 -10 74 -214 104 -447
+                        21 -171 30 -806 15 -1090 -30 -564 -66 -921 -151 -1520 -100 -701 -144 -1095
+                        -154 -1380 l-5 -135 14 170 c13 161 42 452 65 650 12 97 76 555 110 775 85
+                        559 139 1135 160 1715 9 275 1 629 -20 830 -13 117 -54 337 -75 396 -8 23 -15
+                        43 -15 45 0 2 18 4 41 4 59 0 50 30 -15 50 -39 13 -55 26 -87 70 -21 30 -49
+                        61 -63 69 -30 18 -40 60 -19 83 8 9 47 29 87 44 423 160 964 630 1421 1236
+                        201 265 363 528 496 803 71 148 173 392 197 475 6 19 24 82 41 140 92 310 127
+                        617 110 950 -25 472 -118 854 -299 1225 -145 296 -346 558 -583 761 -345 295
+                        -744 472 -1214 539 -105 15 -422 27 -513 19z m285 -6342 c-6 -7 -35 18 -35 31
+                        0 5 9 2 20 -8 11 -10 18 -20 15 -23z" stroke="black" fill="#2C89A0" stroke-width="2" fill-opacity="0.5"/>
+                        <path d="M3184 1605 c0 -66 1 -92 3 -57 2 34 2 88 0 120 -2 31 -3 3 -3 -63z"/>
+                        <path d="M3183 1105 c0 -22 2 -30 4 -17 2 12 2 30 0 40 -3 9 -5 -1 -4 -23z"/>
+                        </g>
+                        </svg>
+                    </div>
+
+
+    
+                  
+                </div>
+            </div>
+        </article>
+        <article id="aboutMe">
+            <h1 class="text-center mt-5"> About me</h1>
+            <section class="aboutMe">
+                        
+                        <div class="shortStory">
+                            <img  id="selfie2" src="img/wojciech.jpg " alt=" selfie">
+                            <div class="insideDiv">
+                                <h5 class=" text-center font-weight-bolder"> Hi, I am Wojciech !</h5>
+                                <p class="  text-justify p-3">I am from Poland but now I&nbsp;live in Isafjordur, it´s a&nbsp;small town and capital city of Westfjords in Iceland. I&nbsp;started to code doing some C++ course on YouTube, it quickly turned into my hobby.
+                                 Besides coding in my free time I&nbsp;like to taking long walks, listening to music and playing guitar (I&nbsp;like to sing when nobody hears me).
+                                </p>
+                            </div>
+                        </div>
+                    
+            </section>
+            
+            
+            
+            
+            <div class="isafjordur">
+                
+                <div class="westfjords text-center ">
+                    
+                    <div>
+                        <p>Westfjords is the place where you can see high fjords in stunning combination with crystal blue water, snow and sand beaches.</p>
+                        
+                    </div>
+                    <img class="cats2" src="img/cats2.jpg" alt="cats">
+                </div>
+            </div>
+            <!--
+            <h4 class=" fotoramaDescr text-center">Pigany</h4>
+            <div class="fotorama pigany" >
+               
+                
+                <img src="img/ognisko.jpg " alt=" ">
+                <img src="img/kwiaty.jpg" alt=" ">
+                <img src="img/ogrodek.jpg " alt=" ">
+                
+            
+            </div>
+            <div class=" piganyDescription">
+                <p> Pigany is the village where I grew up with beautiful landscapes and forests. </p>
+            </div> -->
+
+           
+           
+        </article>
+        <article id="circularGallery">
+            <div class="circularGallery" >
+                <div class="hex"> 
+                    <img  src="img/snow.jpg" alt="snow">
+                </div>
+                <div class="hex"> 
+                
+                </div>
+                <div class="hex"> 
+                    
+                </div>
+                <div class="hex">
+                    <button id="button1" type="button" class="button btn btn-info"> Enjoy the view</button>
+                </div>
+                <div class="hex">  <img src="img/sea.jpg" alt="sea"></div>
+                <div class="hex"></div>
+                <div class="hex ">  </div>
+                <div class="hex"> <img src="img/ship.jpg" alt="sheep"></div>
+                <div class="hex"> 
+                    <button id="button2"  type="button" class="button2 btn btn-info">Enjoy the view </button>
+                </div>
+                <div class="hex"></div>
+                
+            </div>
+           
+            
+        </article>
+       
+          
+            <div class="d-flex justify-content-center">
+                <button id="goBack" style="position: relative; top: -150px; left: -15px; transition: all 2s ease-in-out; opacity: 0; " type="button" class="button2 btn btn-info"> Go back </button>
+            </div>    
+            
+           
+       
+        
+        <article id="contact"> 
+            <h1 class="text-center" > Contact </h1>
+            <p class="text-center mt-3"> 
+                The best way to get in touch is to send me a note on email - wojciech.marcichow@o2.pl.<br>
+                I'm also on Facebook and Github.
+            </p>
+            <div class="d-flex justify-content-center">
+                <a href="https://www.facebook.com/wojtek2223"><img class="contactImg" src="img/facebook.png " alt=" "></a>
+                <a class="d-flex" href="https://github.com/Wojciech28"><img class="contactImg"  src="img/github.png " alt=" "></a>
+            </div>
+        </article>
+        
+        
+    </main>
+
+    <footer id="footer" class=" m-0 ">
+        <nav class="row align-items-start ">
+            <ul class="secondnav flex-wrap justify-content-center "  >
+                <li class=" col-sm-2 col-md-4 col-xl-2 col m-5 "> <a href="#navlist"> Home </a></li>
+                <li class=" col-sm-2 col-md-4 col-xl-2 m-5 "> <a href="#slider"> Portfolio</a></li>
+                <li class=" col-sm-2 col-md-4 col-xl-2 m-5 "> <a href="#aboutMe"> AboutMe</a></li>
+                <li class=" col-sm-2 col-md-4 col-xl-2 m-5 "> <a href="#contact"> Contact</a></li>
+            </ul>
+        </nav>
+        <div class="footerParagraph">
+            <p class=" co text-center text-white-50 font-weight-bolder"> © 2020 Wojciech Marcichow. All rights reserved. ☁️ Made in Isafjordur. 🌤️<br>
+            wojciech.marcichow@o2.pl</p>        
+        </div>
+    </footer>
+    <script src="plugins.js"></script>
+    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+    
+</html>
